@@ -13,6 +13,7 @@
            revision="a14/master" />
 
  <!-- Dependencies -->
+  <project name="LineageOS/android_device_lineage_sepolicy" path="device/lineage/sepolicy" remote="github" revision="ac2362bf410ad8497a7767f56b5f0a3808c6d04d" upstream="refs/heads/lineage-21.0" dest-branch="refs/heads/lineage-21.0"/>
 
  <!-- Replacements -->
 
