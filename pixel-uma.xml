@@ -53,8 +53,8 @@
   <project path="hardware/mithorium/display/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/hal" name="android_hardware_qcom_display_mithorium" groups="device" remote="mi-thorium" revision="mithorium/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0"/>
 
  <!-- Hardware - LineageOS (based on LA.UM.10.6.2 tags) -->
-  <project path="hardware/mithorium/media/lineage-21.0-caf-msm8953/hal" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-21.0-caf-msm8953" />
-  <project path="hardware/mithorium/display/lineage-21.0-caf-msm8953/hal" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-21.0-caf-msm8953" />
+  <project path="hardware/mithorium/media/lineage-21.0-caf-msm8953/hal" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" remote="github" revision="lineage-21.0-caf-msm8953" />
+  <project path="hardware/mithorium/display/lineage-21.0-caf-msm8953/hal" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="github" revision="lineage-21.0-caf-msm8953" />
 
  <!-- MiThoriumSSI -->
   <project path="device/xiaomi/MiThoriumSSI" name="android_device_xiaomi_MiThoriumSSI" groups="device" remote="mi-thorium" revision="a14/aosp"/>
@@ -84,4 +84,3 @@
  <!-- Tiare - Kernel 4.19 -->
   <project path="device/xiaomi/Tiare_4_19" name="android_device_xiaomi_Tiare_4_19" groups="device" remote="mi-thorium" revision="a11/master"/>
 </manifest>
-manifest>
