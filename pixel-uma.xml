@@ -16,7 +16,41 @@
   <project name="LineageOS/android_device_lineage_sepolicy" path="device/lineage/sepolicy" remote="github" revision="ac2362bf410ad8497a7767f56b5f0a3808c6d04d" upstream="refs/heads/lineage-21.0" dest-branch="refs/heads/lineage-21.0"/>
   <project path="device/xiaomi/kernel-mithorium" name="android_device_xiaomi_kernel-mithorium" groups="device" remote="mi-thorium" revision="master"/>
 
- <!-- Replacements -->
+ <!-- Kernel 4.19 -->
+  <project path="kernel/xiaomi/mithorium-4.19/kernel" name="kernel_msm-4.19" groups="kernel" remote="mi-thorium" revision="mithorium/a13/master" >
+    <linkfile src="drivers" dest="kernel/xiaomi/mithorium-4.19/drivers" />
+  </project>
+
+  <project path="kernel/xiaomi/mithorium-4.19/dts/vendor-legacy" name="kernel_devicetree_msm-4.19" groups="dts" remote="mi-thorium" revision="dts/master" >
+    <linkfile src="." dest="kernel/xiaomi/mithorium-4.19/kernel/arch/arm64/boot/dts/vendor-legacy" />
+  </project>
+  <project path="kernel/xiaomi/mithorium-4.19/dts/xiaomi-msm8937" name="kernel_devicetree_xiaomi-msm8937" groups="dts" remote="mi-thorium" revision="dts/mi8937/4.19/master" >
+    <linkfile src="." dest="kernel/xiaomi/mithorium-4.19/kernel/arch/arm64/boot/dts/xiaomi-msm8937" />
+  </project>
+  <project path="kernel/xiaomi/mithorium-4.19/dts/xiaomi-sdm439" name="kernel_devicetree_xiaomi-sdm439" groups="dts" remote="mi-thorium" revision="dts/mi439/4.19/master" >
+    <linkfile src="." dest="kernel/xiaomi/mithorium-4.19/kernel/arch/arm64/boot/dts/xiaomi-sdm439" />
+  </project>
+
+  <project path="kernel/xiaomi/mithorium-4.19/module/xiaomi-msm8937" name="kernel_techpack_xiaomi-msm8937" groups="module" remote="mi-thorium" revision="techpack/mi8937/4.19/master" >
+    <linkfile src="." dest="kernel/xiaomi/mithorium-4.19/kernel/techpack/xiaomi-msm8937" />
+  </project>
+  <project path="kernel/xiaomi/mithorium-4.19/module/xiaomi-sdm439" name="kernel_techpack_xiaomi-sdm439" groups="module" remote="mi-thorium" revision="techpack/mi439/4.19/master" >
+    <linkfile src="." dest="kernel/xiaomi/mithorium-4.19/kernel/techpack/xiaomi-sdm439" />
+  </project>
+
+  <project path="kernel/xiaomi/mithorium-4.19/module/audio-legacy" name="kernel_techpack_audio-legacy" groups="module" remote="mi-thorium" revision="audio/4.19/mithorium/master" >
+    <linkfile src="." dest="kernel/xiaomi/mithorium-4.19/kernel/techpack/audio-legacy" />
+  </project>
+  <project path="kernel/xiaomi/mithorium-4.19/module/camera-legacy" name="kernel_techpack_camera-legacy" groups="module" remote="mi-thorium" revision="camera/LA.UM.8.6.r1-05300-89xx.0/4.19/mithorium" >
+    <linkfile src="." dest="kernel/xiaomi/mithorium-4.19/kernel/techpack/camera-legacy" />
+  </project>
+  <project path="kernel/xiaomi/mithorium-4.19/module/camera-legacy-m" name="kernel_techpack_camera-legacy" groups="module" remote="mi-thorium" revision="camera/LA.UM.5.3-10610-89xx.0/4.19/mithorium" >
+    <linkfile src="." dest="kernel/xiaomi/mithorium-4.19/kernel/techpack/camera-legacy-m" />
+  </project>
+
+  <project path="kernel/xiaomi/mithorium-4.19/module/prima" name="vendor_qcom_opensource_wlan_prima" groups="module" remote="mi-thorium" revision="wlan/LA.UM.9.6.4/mithorium/master" >
+    <linkfile src="." dest="kernel/xiaomi/mithorium-4.19/kernel/drivers/staging/prima" />
+  </project>
 
  <!-- Common -->
   <project path="device/xiaomi/mithorium-common" name="7jari/android_device_xiaomi_mithorium-common"     groups="device" remote="github" revision="fourteen"/>
