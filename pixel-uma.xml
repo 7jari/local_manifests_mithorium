@@ -12,9 +12,6 @@
            fetch="https://github.com/Mi-Thorium"
            revision="a14/master" />
 
- <!-- Dependencies -->
-  <project name="LineageOS/android_device_lineage_sepolicy" path="device/lineage/sepolicy" remote="github" revision="ac2362bf410ad8497a7767f56b5f0a3808c6d04d" upstream="refs/heads/lineage-21.0" dest-branch="refs/heads/lineage-21.0"/>
-
  <!-- Kernel 4.19 -->
   <project path="kernel/xiaomi/mithorium-4.19/kernel" name="kernel_msm-4.19" groups="kernel" remote="mi-thorium" revision="mithorium/a13/master" >
     <linkfile src="drivers" dest="kernel/xiaomi/mithorium-4.19/drivers" />
